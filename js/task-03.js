@@ -14,11 +14,12 @@ const images = [
 ];
 
 const galleryEl = document.querySelector('.gallery');
-
+galleryEl.style.display = 'flex';
+galleryEl.style.justifyContent = 'space-between';
 const galleryMarkupEl = images
   .map(
     image =>
-      `<li class="js-gallery__item" ><img
+      `<li><img
   src=${image.url}
   alt=${image.alt}
   width="640"
@@ -28,5 +29,6 @@ const galleryMarkupEl = images
   .join('');
 
 galleryEl.innerHTML = galleryMarkupEl;
-galleryEl.classList.add('js-gallery');
+
 const itemsEl = galleryEl.querySelectorAll('li');
+itemsEl.forEach(item => (item.style.listStyle = 'none'));
