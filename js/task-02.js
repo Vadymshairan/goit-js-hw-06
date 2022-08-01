@@ -26,6 +26,6 @@ const makeItemsList = options => {
 };
 
 const elements = makeItemsList(ingredients);
-console.log(elements);
+// console.log(elements);
 
 ulEl.append(...elements);

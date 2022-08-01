@@ -14,4 +14,6 @@ decrementBtn.addEventListener('click', () => (counterValueEll.textContent = coun
 // }
 
 incrementBtn.addEventListener('click', () => (counterValueEll.textContent = counterValue += 1));
-// function onIncrementBtnClick(params) {}
+// function onIncrementBtnClick(params) {
+//   counterValue += 1;
+// }
