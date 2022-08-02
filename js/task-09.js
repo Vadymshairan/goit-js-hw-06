@@ -5,9 +5,9 @@ function getRandomHexColor() {
 const bodyRef = document.querySelector('body');
 // console.log((bodyRef.style.backgroundColor = 'teal'));
 const btnChangeColorRef = document.querySelector('.change-color');
-console.log(btnChangeColorRef);
+// console.log(btnChangeColorRef);
 const spanColorRef = document.querySelector('.color');
-console.log(spanColorRef.textContent);
+// console.log(spanColorRef.textContent);
 
 btnChangeColorRef.addEventListener('click', onBtnChangeColorClick);
 
