@@ -3,6 +3,8 @@ const validInput = Number(inputRef.dataset.length);
 // console.log(typeof validInput);
 // console.log(validInput);
 
+inputRef.addEventListener('blur', onInputValidation);
+
 function onInputValidation(event) {
   const inputNumber = event.currentTarget.value.length;
   //   console.log(typeof inputNumber);
@@ -18,4 +20,3 @@ function onInputValidation(event) {
     console.log('you shall not pass');
   }
 }
-inputRef.addEventListener('blur', onInputValidation);
