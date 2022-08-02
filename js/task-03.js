@@ -14,21 +14,23 @@ const images = [
 ];
 
 const galleryEl = document.querySelector('.gallery');
-galleryEl.style.display = 'flex';
-galleryEl.style.justifyContent = 'space-between';
+
 const galleryMarkupEl = images
   .map(
     image =>
       `<li><img
   src=${image.url}
   alt=${image.alt}
-  width="640"
-  height="320"
+  width="480"
+  height="240"
 /></li>`
   )
   .join('');
 
 galleryEl.innerHTML = galleryMarkupEl;
 
+galleryEl.style.display = 'flex';
+galleryEl.style.justifyContent = 'space-between';
+galleryEl.style.backgroundColor = '#999fdd';
 const itemsEl = galleryEl.querySelectorAll('li');
 itemsEl.forEach(item => (item.style.listStyle = 'none'));
