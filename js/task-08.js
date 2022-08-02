@@ -9,7 +9,7 @@ function onSubmitBtn(event) {
   } = event.currentTarget;
 
   if (email.value === '' || password.value === '') {
-    return alert('Please fill in all the fields!');
+    return alert('Всі поля повинні бути заповнені.');
   }
 
   console.log(`Login: ${email.value}, Password: ${password.value}`);
